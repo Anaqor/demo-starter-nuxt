@@ -1,75 +1,24 @@
-# Nuxt 3 Minimal Starter
+# Demo Starter Nuxt 
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is an example of a PlanQK Demo created with Nuxt. The demo creates a web user interface to demonstrate the Quantum Random Number Generator published on the PlanQK Marketplace. The app has a user interface and a single server route to make requests to the PlanQK service and ensure that credentials are not exposed to the client.
 
-## Setup
+## Requirements
 
-Make sure to install the dependencies:
+In order to make request to the Random Number Generator Service, you need an Application with an active subscription to the service. 
+You need to provide CONSUMER_KEY and CONSUMER_SECRET of your application as environment variables.
 
-```bash
-# npm
-npm install
+## Local Development
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+For local development, you need to create a `.env` file in the root directory of the project and add CONSUMER_KEY and CONSUMER_SECRET of your application as environment variables.
 
 ```bash
-# npm
+npm i
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+## Run Docker
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+docker build -t demo-starter-nuxt .
+docker run -p 8080:8080 -e CONSUMER_KEY=your_consumer_key -e CONSUMER_SECRET=your_consumer_secret demo-starter-nuxt
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

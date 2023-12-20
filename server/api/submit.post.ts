@@ -3,7 +3,7 @@ import {PlanqkServiceClient} from "@anaqor/planqk-service-sdk"
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
 
-  const serviceEndpoint = process.env.SERVICE_ENDPOINT || ''
+  const serviceEndpoint = process.env.SERVICE_ENDPOINT || 'https://gateway.platform.planqk.de/anaqor/quantum-random-number-generator/1.0.0'
   const consumerKey = process.env.CONSUMER_KEY || ''
   const consumerSecret = process.env.CONSUMER_SECRET || ''
 
