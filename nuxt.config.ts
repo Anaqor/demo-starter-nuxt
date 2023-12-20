@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   security: {
     headers: {
       crossOriginResourcePolicy: 'cross-origin',
+      crossOriginEmbedderPolicy: false
     },
   },
   css: ["bootstrap/dist/css/bootstrap.min.css"],
