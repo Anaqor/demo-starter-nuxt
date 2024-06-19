@@ -1,3 +1,7 @@
+# PROJECT MOVED TO PlanQK organization
+
+**NOTICE:** This project has moved to the GitHub PlanQK organization for continued updates and development. You can find the latest version of this project at (https://github.com/PlanQK/planqk-demo-starter-nuxt).
+
 # Demo Starter Nuxt 
 
 This is an example of a PlanQK Demo created with Nuxt. The demo creates a web user interface to demonstrate the Quantum Random Number Generator published on the PlanQK Marketplace. The app has a user interface and a single server route to make requests to the PlanQK service and ensure that credentials are not exposed to the client.
